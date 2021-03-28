@@ -40,7 +40,7 @@ public class SchengenCalculator {
                 }
                 sumOfDays += visitDaysCount;
             }
-            if (schengenWindowDuration / 2 <= sumOfDays) {
+            if (schengenWindowDuration / 2 >= sumOfDays) {
                 System.out.println("The tourist is in the territory of the EU by law. Days left : " +
                         (schengenWindowDuration / 2 - sumOfDays));
             } else System.out.println("It is illegal for a person to stay in the EU. For " +
